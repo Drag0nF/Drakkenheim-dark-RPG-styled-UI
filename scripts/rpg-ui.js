@@ -83,17 +83,6 @@ Hooks.on('ready', async () => {
 	$("body").removeClass("change-windows");
 });
 
-Hooks.on('getSceneNavigationContext', () => {
-	if (!game.settings.get('drakkenheim-rpg-styled-ui', 'navigationVerticalToggle')) {
-		navigation = document.querySelector("nav.app > ol#scene-list");
-		if (navigation) {
-			navigation.classList.add("vertical")
-		}
-	}
-	if (game.settings.get('drakkenheim-rpg-styled-ui', 'compactModeToggle')) {
-		addClassByQuerySelector("compact-mode", "body")
-	}
-});
 
 Hooks.on('renderCombatCarousel', () => {
 	let carouselSize = game.settings.get('combat-carousel', 'carouselSize')
