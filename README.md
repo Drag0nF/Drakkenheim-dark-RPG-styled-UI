@@ -1,4 +1,7 @@
-# RPG Styled UI
+# This is an edited version of 'RPG Styled UI'
+
+Below is the original description:
+
 Foundry VTT DnD5e RPG Styled UI
 
 A simple styling for FoundryVTT in black and red. Includes:
